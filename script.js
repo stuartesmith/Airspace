@@ -6,7 +6,7 @@ function numberWithZero(num) {
   }
 }
 
-$(".slider-gallery_component").each(function (index) {
+$(".slider-main_component").each(function (index) {
   let totalSlides = numberWithZero($(this).find(".swiper-slide.is-slider-thumbs").length);
   $(".swiper-number-total").text(totalSlides);
   const bgSwiper = new Swiper($(this).find(".swiper.is-slider-bg")[0], {
